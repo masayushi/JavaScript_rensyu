@@ -33,3 +33,124 @@ console.log(e)
 var f = 5;
 f = f**3 //指定f為f(5)的3次方
 console.log(f);
+
+// 指定運算子 Assignment，適用於 + - * / % **
+var num1 = 10;
+// num1 num1 + 5;
+num1 **= 5;
+console.log("指定運算子：" + num1);
+
+// 自訂函式(方法) function、method
+// 語法：
+// 函式關鍵字  函式名稱(參數1、參數2、...){ 程式內容 }
+                // 自訂函數的參數沒有上限
+function functionA(){
+    console.log("我是函式A醬");
+}
+
+// 自訂函式需要被呼叫才會執行
+functionA();
+functionA();
+
+function addTen(number){
+
+    number += 10;
+    console.log("加十："  + number)
+}
+
+addTen(7);
+addTen(100);
+
+function mul(a, b){
+    console.log("數字相乘的結果：" +(a * b));
+}
+
+mul(999, 7);
+
+// 物件 { 物件資料名稱 ： 物件資料值 }
+var car = {
+    brand: "BZ",
+    cc: 2000,
+    color: "gold",
+    drive: function() {
+        console.log("開車中...");
+    }
+}
+
+console.log("汽車的牌子：" + car.brand);
+
+car.drive();
+
+// 練習事件
+var box2 = document.getElementById("box2");
+
+box2.onclick = () => {
+    console.log("點擊唷!");
+}
+
+box2.onmouseenter = () => {
+    console.log("滑入囉!");
+}
+
+box2.onmouseleave = () => {
+    console.log("滑出啦!");
+}
+
+// 陣列 Array 可以用來存放多個資料
+
+var numberA = 10;
+var numberB = 100;
+var numberC = 60;
+
+var numberObject = {
+    A: 10,
+    B: 100,
+    C: 60,
+}
+
+// 陣列資料
+var numbers = [10, 100, 60];
+
+console.log("陣列第三筆資料：" + numbers[2]);
+
+numbers[0] = 999;
+
+console.log("陣列第一筆資料：" + numbers[0]);
+
+console.log("陣列的數量:" + numbers.length);
+
+// 比較運算子 -> > < >= <= == != ->大於 小於 大於等於 小於等於 等於 不等於
+var testA = 100;
+var testB = 50;
+
+console.log(testA != testB);
+
+// == 與 ===的差異
+
+var testC = 7;
+var testD = "7";
+
+console.log("== 的結果：" + (testC == testD)); //比較值
+console.log("=== 的結果:" + (testC === testD)); //比較值與類型
+
+// 邏輯運算子 logical Operators
+var testE = true;
+
+// !是屬於邏輯運算子下的顛倒運算子
+console.log("顛倒：" + !testE);
+
+// 並且 &&
+// 只要有一個 false 其結果就會為 false
+
+console.log(true && true);          //t
+console.log(true && false);         //f
+console.log(false && true);         //f
+console.log(false && false);        //f
+
+// 或者 ||
+//  只要有一個 true 其結果就會為 true
+
+console.log(true && true);          //t
+console.log(true && false);         //t
+console.log(false && true);         //t
+console.log(false && false);        //f
