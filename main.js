@@ -1,3 +1,5 @@
+// Ctrl + F 搜尋
+
 console.log("我是 JS醬!")
 
 // DOM (Document Object Model) 文件物件模式
@@ -207,4 +209,13 @@ score.onchange = () => {
 
 for (let i = 0; i < 100; i++) {
     console.log("迴圈：" + i);
+}
+
+// 陣列
+var products = ["冰美式", "卡布奇諾", "拿鐵"];
+
+// products.length 陣列.長度(即為數量) 3(此範例的數量為三)
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i]);
 }
