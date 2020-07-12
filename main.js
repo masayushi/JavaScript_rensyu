@@ -154,3 +154,57 @@ console.log(true && true);          //t
 console.log(true && false);         //t
 console.log(false && true);         //t
 console.log(false && false);        //f
+
+//判斷式 if
+//語法 Syntax
+// if (布林值) { 當布林值為 true 時會執行 }
+if (true) {
+    console.log ("我是判斷式~");
+}
+
+//  else 否則
+//  if { 當布林值為 true 時會執行 }
+//  else { 當布林值為 false 時會執行 }
+
+var boolTest= true;
+
+if (boolTest) {
+    console.log("布林值為 true!");
+} else {
+    console.log("布林值為 false!");
+}
+
+
+// 如果 分數 >=60 ： 及格
+// 如果 分數 <=60 ： 補考
+// 如果 分數 <=40 ： 被當
+
+var score = document.getElementById("score");
+var result = document.getElementById("result");
+
+score.onchange = () => {
+    var s = parseInt(score.value);
+
+    if (s >= 60) {
+        result.innerText = "分數：" + s + " - 及格";
+    }
+
+    else if (s >= 40){
+        result.innerText = "分數：" + s + " - 補考";
+    }
+    else {
+        result.innerText = "分數：" + s + " - 被當";
+    }
+}
+
+// 迴圈 for 
+// 語法
+// for (初始值; 條件(條件須為布林值); 迭代器-迴圈結束回執行的區塊) {}
+
+// 初始值：迴圈開始的值
+// 條 件：迴圈會執行的條件 - 當條件為 ture 時會執行，false時則會結束迴圈
+// 迭代器：初始值處理 - 通常會為遞增(++)
+
+for (let i = 0; i < 100; i++) {
+    console.log("迴圈：" + i);
+}
