@@ -229,3 +229,25 @@ for (let i = 0; i < ps.length; i++) {
     ps[i].innerText = products[i];
     
 }
+
+// 常數 const  constant
+// 常數無法被變更
+const pi = 3.1415926;
+
+// 範例如下
+// pi = 4.12345;
+// pi = pi + 10;
+
+// let 與 var 的差異
+// let 在同樣的區塊內不能重複，較安全(重複的話網頁會出錯)
+// 只在區塊內有效
+
+var countA = 10;
+var countA = 7;
+// let countA = 5; // 重複瀏覽器會顯示錯誤
+{
+    let countA = 5;
+    console.log(countA);
+}
+
+console.log(countA);
