@@ -251,3 +251,18 @@ var countA = 7;
 }
 
 console.log(countA);
+// ------分--------格---------線-----\\
+var countB = 99;
+{
+    var countB = 77;
+}
+
+console.log(countB);
+// ------分--------格---------線-----\\
+let countC = 99;
+{
+    let countC = 77;
+}
+
+console.log(countC);
+
